@@ -1,0 +1,4 @@
+Manipulate[
+ Graphics3D[{Red, Sphere[{0, -4, 0}, r], Red, Sphere[{0, 4, 0}, r], 
+   Blue, Sphere[{4, 0, 0}, r], , Blue, Sphere[{-4, 0, 0}, r]}, 
+  PlotRange -> {{-10, 10}, {-10, 10}, {-10, 10}}], {r, 0.1, 5}]
