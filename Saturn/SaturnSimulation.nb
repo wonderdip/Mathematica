@@ -1,0 +1,16 @@
+Manipulate[Graphics3D[
+  {GeometricTransformation[
+    {Style[Sphere[{0, 0, 0}, 12], Texture["SaturnTexture"]]},
+    RotationTransform[phi, {0, 0, 1}]], 
+   GeometricTransformation[{Style[Sphere[{37.74, 0, 0}, 0.561], 
+      Texture["DioneTexture"]]}, RotationTransform[theta, {0, 0, 1}]],
+    GeometricTransformation[{Style[Sphere[{32.75, 30, 0}, 0.763], 
+      Texture["RheaTexture"]]}, RotationTransform[delta, {0, 0, 1}]], 
+   GeometricTransformation[{Style[Sphere[{11.5, 30, 0}, 0.396], 
+      Texture["MimasTexture"]]}, 
+    RotationTransform[sigma, {0, 0, 1}]]}, Boxed -> False,
+  Lighting -> "Neutral", ViewPoint -> {0, 0, 90}],
+ {{sigma, 0, " Mimas's orbit angle"}, 0, 2 Pi},
+ {{delta, 0, " Rhea's orbit angle"}, 0, 2 Pi},
+ {{theta, 0, "Dione's orbit angle"}, 0, 2 Pi},
+ {{phi, 0, "Saturn's rotation angle"}, 0, 4 Pi}]
