@@ -1,0 +1,17 @@
+Manipulate[
+ Graphics3D[{Table[{Green, 
+     Sphere[{x, y, RandomReal[{0, 2}]}, 0.5]}, {x, -10, 10, 
+     1}, {y, -20, 10, 1}], 
+   Table[{Red, 
+     Sphere[{RandomReal[{-5, 5}], RandomReal[{-5, 5}], 1}, 0.3]}, {i, 
+     1, 10}], {Cyan, Sphere[{0, 0, 4}, 0.8]}, Orange, 
+   Cylinder[{{-8, 7 + -t*3, 3}, {-7, 7 + -t*3, 3}}, 2], Orange, 
+   Cylinder[{{-8, 0 + -t*3, 3}, {-7, 0 + -t*3, 3}}, 2], Orange, 
+   Cylinder[{{-8, -7 + -t*3, 3}, {-7, -7 + -t*3, 3}}, 2], Orange, 
+   Cylinder[{{8, 7 + -t*3, 3}, {7, 7 + -t*3, 3}}, 2], Orange, 
+   Cylinder[{{8, 0 + -t*3, 3}, {7, 0 + -t*3, 3}}, 2], Orange, 
+   Cylinder[{{8, -7 + -t*3, 3}, {7, -7 + -t*3, 3}}, 2], Black, 
+   Cylinder[{{-8.2, -7 + -t*3, 3}, {8.2, -7 + -t*3, 3}}, 0.5], Black, 
+   Cylinder[{{-8.2, 0 + -t*3, 3}, {8.2, 0 + -t*3, 3}}, 0.5], Black, 
+   Cylinder[{{-8.2, 7 + -t*3, 3}, {8.2, 7 + -t*3, 3}}, 0.5], Blue, 
+   Cuboid[{-7, 10 + -t*3, 3.5}, {7, -10 + -t*3, 4}]}], {t, 0, 2}]
